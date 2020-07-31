@@ -23,7 +23,8 @@ public class ConfigWeb implements WebMvcConfigurer {
 	}
 
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/**").addResourceLocations("classpath:/web/").setCachePeriod(0);
+        registry.addResourceHandler("/web/**").addResourceLocations("classpath:/web/").setCachePeriod(0);
+        registry.setOrder(-1);
     }
 
 }

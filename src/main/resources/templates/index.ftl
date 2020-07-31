@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="css/bulma.min.css">
-	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="web/css/bulma.min.css">
+	<link rel="stylesheet" href="web/css/custom.css">
 	<title>Testosteron</title>
 </head>
 <body>
@@ -32,6 +32,6 @@
 
  
  
-	<script src="js/custom.js"></script>
+	<script src="web/js/custom.js"></script>
 </body>
 </html>

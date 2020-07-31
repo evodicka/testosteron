@@ -33,7 +33,7 @@ public class ControllerRoot {
 	@Autowired
 	private ServiceApp serviceApp;
 	
-	@GetMapping("/")
+	@GetMapping("/**")
 	public String index(HttpServletRequest req, Model model) {
 
 		model.addAttribute("appInfo", buildAppInfo());
@@ -148,6 +148,7 @@ public class ControllerRoot {
 
 		result.addBasic(new KeyVal("Address local", req.getLocalAddr()));
 		result.addBasic(new KeyVal("Address remote", req.getRemoteAddr()));
+		result.addBasic(new KeyVal("Servlet Path", req.getServletPath()));
 		
 		Enumeration<String> headerNames = req.getHeaderNames();
 		while(headerNames.hasMoreElements()) {
